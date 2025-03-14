@@ -9,25 +9,25 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: 100px 1fr 100px;
-    background: linear-gradient(#cf2425, #da606250 50%, #da6062 60%, #da3b3f);
+    background: linear-gradient(#3e3e42, #cac8c8 50%, #cac8c8 60%, #3e3e42);
 }
 
 header,
 footer {
-    height: 100px;
+    height: 100%;
     color: #FFFFFF;
-    display: grid;
-    padding: 0 20px;
+    padding: 0px 20px;
 }
 
 header {
     height: 100px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
+    display: grid;
     color: #ffffff;
+    place-content: left;
+    gap: 10px;
+    padding-top: 41px;
     padding-left: 75px;
-    justify-content: flex-start;
+    grid-template-columns: repeat(2, 50px) 100px 1fr;
 }
 
 header span {
@@ -35,10 +35,8 @@ header span {
 }
 
 main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
 }
 
 .background-logo {
@@ -51,15 +49,18 @@ main {
     right: 0;
     bottom: 0;
     z-index: -1;
+    opacity: 15%;
 }
 
 .content-text {
     position: absolute;
-    color: #ffffff;
+    color: #5c5c5c;
     font-size: 2.5rem;
     width: 240px;
     transform: translateX(-100%);
     text-align: end;
+    left: 45%;
+    top: 44%;
 }
 
 .content-image {
@@ -68,13 +69,23 @@ main {
 
 footer {
     height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 1fr);
     padding-right: 75px;
     padding-left: 75px;
     color: #FFFFFF;
     font-weight: 100;
+}
+
+footer span {
+    display: inherit;
+    place-content: center;
+}
+
+footer img {
+    display: grid;
+    margin-left: 92%;
 }
 
 footer div {
