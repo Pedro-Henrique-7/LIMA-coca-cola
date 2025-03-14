@@ -10,6 +10,19 @@ O site foi desenvolvido utilizando boas práticas, como por exemplo tags semânt
 * CSS
 * Media Queries
 
+
+# RED-BULL
+![](./img/redbull-preview.png)
+Pagína Nova com o mesmo conceito porem utilizando display grid ao invés de display flex.
+
+## Tecnologias
+* HTML
+* CSS
+* Media Queries
+
+
+
+
 ## Autor
 [Pedro Henrique](<https://www.linkedin.com/in/pedro-henrique-oliveira-da-silva-3589772b0/>)
 
